@@ -1,25 +1,91 @@
-# Windows
-*.vcxproj.user
-*.ncb
-*.suo
-*.pdb
-*.ilk
-*.aps
+# Source temporaries
+*.cpp~
+*.hpp~
+src/.*.cpp.swp*
+src/.*.hpp.swp*
+src/*.cpp~
+src/*.hpp~
+src/common/*.cpp.swp*
+src/common/*.hpp.swp*
+src/common/*.cpp~
+src/common/*.hpp~
+src/sound/*.cpp.swp*
+src/sound/*.hpp.swp*
+src/sound/*.cpp~
+src/sound/*.hpp~
+src/server/*.cpp.swp*
+src/server/*.hpp.swp*
+src/server/*.cpp~
+src/server/*.hpp~
+src/net/*.cpp.swp*
+src/net/*.hpp.swp*
+src/net/*.cpp~
+src/net/*.hpp~
 
-# OS X
-build/
-DerivedData/
-xcuserdata/
-*.mode1v3
-*.pbxuser
-*.xccheckout
+# Windows binaries
+*.exe
+*.dll
+*a.out
+*.so
 
-# IDA Pro
-*.idb
-*.id0
-*.id1
-*.nam
-*.til
+# QtCreator project user settings
+*.user
 
-# Misc
-/tmp/
+# QtCreator builds
+build-*
+
+
+# Objects
+*.o
+*.obj
+
+
+# Game log and config
+*.log
+*.cfg
+
+# Game data
+*.bin
+*.BIN
+*.tar
+*.TAR
+CURSED/
+CURSED/*
+cursed/
+cursed/*
+MUSIC/
+MUSIC/*
+music/
+music/*
+ADDON1/
+ADDON1/*
+addon1/
+addon1/*
+borough/
+borough/*
+BOROUGH/
+BOROUGH/*
+USERMAP/
+USERMAP/*
+usermap/
+usermap/*
+
+# Game saves
+saves/*
+SAVES/*
+
+# Screen shots
+*.tga
+*.TGA
+
+# Build system
+CMakeFiles/*
+CMakeFiles
+CMakeDoxyfile.in
+CMakeDoxygenDefaults.cmake
+cmake_install.cmake
+install_manifest.txt
+CMakeCache.txt
+Makefile
+OpenChasm
+compile_commands.json
