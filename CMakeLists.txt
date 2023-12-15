@@ -21,6 +21,8 @@ add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/external/physfs)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/external/tinygltf)
 
 find_package(SDL2 REQUIRED)
+find_package(OpenAL REQUIRED)
+find_package(ALUT REQUIRED)
 
 include_directories(${SDL2_INCLUDE_DIR} ${CMAKE_CURRENT_SOURCE_DIR}
 	${CMAKE_CURRENT_SOURCE_DIR}/src/
@@ -87,10 +89,10 @@ target_link_libraries(${PROJECT_NAME} ${CHASM_LIBS})
 
 # Configure tools
 if(BUILD_TOOLS)
-	file(GLOB_RECURSE COMMON_FILES "${CMAKE_CURRENT_SOURCE_DIR}/tools/*.cpp") 
+	file(GLOB_RECURSE COMMON_FILES "${CMAKE_CURRENT_SOURCE_DIR}/tools/xxd.c") 
 
-add_executable(ps10
-	${CMAKE_CURRENT_SOURCE_DIR}/tools/ps10.cpp
+add_executable(xxd
+	${CMAKE_CURRENT_SOURCE_DIR}/tools/xxd.c
 	${COMMON_FILES}
 )
 endif(BUILD_TOOLS)
